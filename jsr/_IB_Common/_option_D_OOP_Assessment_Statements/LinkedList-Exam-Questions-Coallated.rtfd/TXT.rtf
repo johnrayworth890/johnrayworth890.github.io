@@ -1,0 +1,382 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fswiss\fcharset0 ArialMT;
+\f3\fmodern\fcharset0 CourierNewPSMT;\f4\fmodern\fcharset0 CourierNewPS-ItalicMT;\f5\fmodern\fcharset0 CourierNewPS-BoldMT;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1100\margr1100\margb1100\margt1100\vieww15940\viewh16060\viewkind1
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 November 2017\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b0 \cf0 \
+18. The programming team have decided to replace the array of Item objects (pl) and the array of Payment objects (tables) with either a linked list or an ArrayList.\
+\
+(a) Outline one benefit that the use of either of these choices will have over the original array structures. [2]\
+\
+The array of Item objects (pl) is replaced by priceLL, an object of the LinkedList library class. The Item objects can be created, deleted or amended.\
+\
+The method changePrice() allows an item, identified by its item code, to have its price changed. All data required by this method are passed as parameters. If the item is not found then an appropriate message is displayed.\
+\
+(b) Construct the method changePrice(). [6]\
+\
+(c) Explain how a binary tree structure would allow a more efficient search for the\
+Item object. [4] \
+\
+\
+18. (a) Memory space for the exact number of objects can be assigned;\
+Whereas the array will (inevitably) waste space/allot more memory than is\
+needed/may run out of allotted memory/there is no need to determine array size; [2]\
+\
+(b) Award marks as follows, up to [6 max].\
+Award [1] for correct signature.\
+Award [1] for correct initialization of the length of the loop/size of the linked list/\
+Boolean/Iterator object as appropriate to the solution and appropriate message\
+displayed at end;\
+Award [1] for correct loop.\
+Award [1] for correct comparison, with or without get methods.\
+Award [1] for correct updating, with or without get methods.\
+Award [1] for early exit if found.\
+Award [1] for answer completely correct.\
+\
+Example 1\
+\
+public void changePrice(LinkedList<Item> pll, String c, double newPrice)\{\
+    int i = 0;\
+    boolean found = false;\
+    int size = pll.size();\
+    while (i < size && !found)\{\
+        if (pll.get(i).getCode().equals(c)) // allow \'93=\'94\{\
+            pll.get(i).setPrice(newPrice);\
+            found = true;\
+        \}\
+        i = i + 1;\
+    \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b \cf0 \} \page \pard\pardeftab720\partightenfactor0
+
+\fs22 \cf0 May 2017\
+
+\b0 \
+15. The array salesHistory in the SalesPerson class is now replaced by objects of the LinkedList library class.\
+\
+(a) Identify the statement that will replace private Sales[] salesHistory; in the SalesPerson class.  [2]\
+\
+(b) Construct the method largestSale() in the SalesPerson class, that returns the\
+Sales object of the sale with the largest value. [5] \
+\
+\
+\
+15. (a) Award [2] marks for a correct answer (with any variable), and [1] if 
+\f1\fs21 <Sales> 
+\f0\fs22 is\
+missing, but otherwise correct.\
+
+\f1\fs21 \
+private Linkedlist<Sales> salesHistory; 
+\f0\fs22 [2]\
+\
+(b) Answer using an index:\
+Award up to [5 max] as follows (there are 6 marking points).\
+[1] for correct initialization.\
+[1] for correct calculation of size (or equivalent).\
+[1] for correct loop.\
+[1] for correct use of 
+\f1\fs21 get()
+\f0\fs22 .\
+[1] for correct comparison (allow FT if no dot notation).\
+[1] for correctly updating 
+\f1\fs21 largest
+\f0\fs22 .\
+
+\f1\fs21 \
+public Sales largestSale()\{ \
+    double largest = -1;\
+    Sales maxSale = null;\
+    int a = salesHistory.size();\
+    for (int x=0; x<a; x++)\{\
+        Sales s = salesHistory.get(x);\
+        if (s.getValue()*s.getQuantity() > largest)\{\
+            largest = (s.getValue()*s.getQuantity());\
+            maxSale = s;\
+        \}\
+    \}\
+    return maxSale;\
+\}\
+\
+\
+
+\f0\b \page November 2016\
+
+\b0 \
+20. The programming team is considering whether to replace the journeyHistory array with an abstract data type (ADT) such as ArrayList or LinkedList.\
+\
+(a) Outline how a programmer is able to use methods of an ADT, such as an ArrayList or a LinkedList, without knowing how they are implemented. [3]\
+\
+(b) Suggest why the team might choose to use an instance of the LinkedList library class, and not an ArrayList, to store the journeyHistory objects. [3]\
+\
+The allCodes array has some duplicated entries (some objects which are the same).The team has decided to copy to an ArrayList object all unique entries of the allCodes array.\
+\
+(c) Construct the method convert() that will carry out this process. By inspecting the routeCode fields you should ensure that only unique objects are copied. [7] \
+\
+\
+20. (a) Methods are standard / it is clear from the method name what is does;\
+An example of this;\
+Only need to know the parameters that have to be passed to these methods;\
+And the output/result returned; [max 3]\
+\
+(b) Adding (continually) to a linked list is very efficient/more efficient than for an ArrayList; (allow \'93easier\'94)\
+As adding to the front or back just requires adjusting pointers/references;\
+An ArrayList will need to re-size itself when more entries are required; [3]\
+\
+(c) Award marks as follows:\
+Creating a new ArrayList (or passing one as a parameter);\
+Adding the first value of allCodes;\
+Correct while loop (or equivalent);\
+[2] for checking through previous values for duplicates ([1] for a reasonable attempt);\
+The clause that adds to the ArrayList;\
+Correct assignment of \'93duplicate\'94 throughout (or equivalent);\
+\
+Note: An acceptable alternative solution would be to add all entries to the ArrayList and then remove duplicates.\
+\
+public void convert()\{\
+    ArrayList n = new ArrayList();\
+    n.add(allCodes[0]);\
+    Boolean duplicate = false;\
+    int x = 1;\
+    while (allCodes[x] != null) \{ \
+        for (int y = 0; y<x; y++) \{\
+            if (allCodes[x].getRouteCode() == allCodes[y].getRouteCode()) \{\
+                duplicate = true;\
+            \}\
+        \}\
+        if(duplicate == false)\
+        \{\
+            n.add(allCodes[x]);\
+        \}\
+        duplicate = false;\
+        x++;\
+    \}\
+
+\b \}      [7] \page November 2015\
+\
+\pard\pardeftab720\partightenfactor0
+
+\b0\fs22 \cf0 18. Due to the growth of the village, more people have been using the clinic and the current\
+static implementation of the waiting room is no longer suitable. The waiting room needs to\
+be implemented dynamically with a structure that preserves the order that the patients have\
+come into the clinic.\
+\
+(a) (i) State why a stack is not suitable for this purpose. [1]\
+\
+(ii) Outline one typical application of a stack. [2]\
+\
+It has been decided that a linked-list will be used to hold the individual 
+\f1\fs21 Patient 
+\f0\fs22 objects.\
+An object of the 
+\f1\fs21 LinkedList 
+\f0\fs22 class will be used to instantiate a dynamic list of patients to implement the 
+\f1\fs21 WaitingRoom 
+\f0\fs22 as follows.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs21 \cf0 \
+public class WaitingRoom \{\
+    private LinkedList<Patient> PatientList = new LinkedList<Patient>();\
+\pard\pardeftab720\partightenfactor0
+\cf0     \
+    // methods\
+    public void add(Patient P)\{\
+    // adds a patient at the end of the list\
+        PatientList.addLast(P);\
+    \}\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0     public void remove()\{\
+    // outputs the name of the next patient to see a doctor and\
+    // removes this patient instance from the list\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0         int 
+\f0 index = findNextPatientIndex();\
+
+\f1         System.out.println(PatientList.get(index).getName());\
+        PatientList.remove(index);\
+    \}\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0     private int 
+\f0 findNextPatientIndex()
+\f1 \{\
+        int i = 0, \
+        result = 0;\
+        
+\f0 Patient current, firstup;\
+
+\f1         
+\f0 firstup = new Patient();\
+
+\f1         
+\f0 firstup.setPriority(0);\
+
+\f1         while (i < PatientList.size())\{\
+            current = PatientList.get(i);\
+            if 
+\f0 (current.getPriority() > firstup.getPriority())
+\f1 \{\
+                
+\f0 firstup = current;\
+
+\f1                 result = i;\
+            \}\
+            i=i+1;\
+        \}\
+        return result;\
+    \}\
+\pard\pardeftab720\partightenfactor0
+\cf0 \}
+\f0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs22 \cf0 \
+\
+\
+\
+\
+(b) The 
+\f1\fs21 remove 
+\f0\fs22 method could cause a run-time error. State the pre-condition for the\
+\pard\pardeftab720\partightenfactor0
+
+\fs21 \cf0 findNextPatientIndex 
+\fs22 method, in order to avoid this error. [1]\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 1.tiff \width9080 \height5920
+}¬}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs22 \cf0 \page 18.
+\b0 (a) (i) A stack is a LIFO structure;
+\b [1] 
+\b0 \
+\
+(ii)
+\i Award 
+\b [1] 
+\b0 for stating an application and 
+\b [1] 
+\b0 for an elaboration
+\i0 .\
+\pard\pardeftab720\partightenfactor0
+
+\i \cf0 Example answer:
+\i0 \
+The system stack stores return data of interrupted processes;\
+The last interrupted process is the first to resume;  
+\b [2] 
+\b0 \
+\
+(b)Pre-condition: there is at least one patient instance in the list;  
+\b [1] 
+\b0 \
+\
+(c)
+\i Award 
+\b [1] 
+\b0 for each row filled correctly
+\i0 .\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 3.tiff \width9080 \height1900
+}¬}\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs22 \cf0 \
+(d)
+\f3 findNextPatientIndex 
+\f2 returns the index of the first patient with the highest priority in the list/find the next patient with the highest priority;
+\b [1] 
+\b0 \
+\
+(e)
+\i Award marks as follows up to 
+\b [3 max]
+\i0\b0 .\
+\pard\pardeftab720\partightenfactor0
+
+\i \cf0 Award 
+\b [1] 
+\b0 for introducing and initializing a Boolean 
+\f4\fs21 done
+\f2\i0\fs22 .\
+
+\i Award 
+\b [1] 
+\b0 for adding 
+\f4\fs21 !done 
+\f2\fs22 to the loop condition
+\i0 .\
+
+\i Award 
+\b [1] 
+\b0 for testing for early exit 
+\f3\i0\fs21 (current.priority==3)
+\f2\fs22 .\
+
+\i \
+Example answers:
+\i0 \
+Add a boolean 
+\f3\fs21 done 
+\f2\fs22 and set it to false before the loop;\
+Add 
+\f3\fs21 &&(!done) 
+\f2\fs22 to the loop condition;\
+\
+if 
+\f3\fs21 current.priority 
+\f2\fs22 equals 3 then make done true; \
+\pard\pardeftab720\partightenfactor0
+
+\f5\b\fs21 \cf0 boolean done = false;
+\f3\b0 \
+
+\f5\b while 
+\f3\b0 ((i < PatientList.size()) 
+\f5\b && (!done)
+\f3\b0 )\{ \
+    current = PatientList.get(i); \
+\pard\pardeftab720\partightenfactor0
+\cf0     
+\f5\b if 
+\f3\b0 (current.getPriority() > firstup.getPriority()) \{ \
+        firstup = current; \
+        result = i; \
+    \} \
+    
+\f5\b if (current.getPriority()==3) \{ done = true; \} 
+\f3\b0 \
+        i=i+1; \
+    \} \
+\pard\pardeftab720\partightenfactor0
+
+\f5\b \cf0 while 
+\f3\b0 ((i < PatientList.size()) 
+\f5\b && (current.getPriority()!=3)
+\f3\b0 )
+\f2\b\fs22 [3]
+\b0 \
+\
+}
