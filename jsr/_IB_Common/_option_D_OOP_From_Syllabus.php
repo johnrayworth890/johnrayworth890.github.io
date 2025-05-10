@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>
+Option D - OOP Programming
+
+</title>
+
+<meta name="description" content="" /><!-- PUT DESCRIPTION OF PAGE HERE -->
+
+<meta name="keywords" content="" /><!-- PUT KEYWORDS HERE; though less supported -->
+
+	<link href="../cssStyleSheets/mainCSSTemplate.css" rel="stylesheet" type="text/css" />
+<link href="../cssStyleSheets/forSideBarEtc.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../_jwplayer/jwplayer.js"></script>
+</head><body>
+	<p align="right"><a href="/jsr/logout1.php"><font size="2">Logout</font></a></p>
+	<div class="sidenav">
+	  <p><a href="../../index.html">Home</a>
+</div>
+	<div class="backgroundDiv">
+	
+<h1>D—Object-oriented programming</h1>
+<span class="Red">START &nbsp;of &nbsp;STAGE &nbsp;E</span><a name="stageE" id="stageE"></a>
+<h2>D.1 Objects as a programming concept (6 hours)</h2>
+<p><em>The paradigm of object-oriented programming should be introduced through discussion and example.</em></p>
+<p><span class="gray">Extra resource: <a href="Java-Java-Java-Morelli-Walde.pdf">Java, Java, Java</a> by Ralph Morelli &amp; Ralph Walde. (CC BY 4.0)<br />
+A
+great college level open source license  textbook to aid you. </span></p>
+<blockquote>
+  <p><strong><br />
+    Extra Code Examples </strong>for &quot;Read Before Write&quot; and Tracing, from past papers<br />
+    <a href="_option_D_OOP_Assessment_Statements/Past-Paper-Multi-class-Read-and-Trace-Code.zip"><br />
+      </a>May 2014 - <a href="_option_D_OOP_Assessment_Statements/Past-Paper-Code/Genus-and-Species-Project.php">Genus and Species Project<br />
+      </a>Nov. 2014 - <a href="_option_D_OOP_Assessment_Statements/Past-Paper-Code/Rolling-Stock-and-Trains-Project.php">Rolling Stock &amp; Trains Project<br />
+      </a>May 2015 - <a href="_option_D_OOP_Assessment_Statements/Past-Paper-Code/Library-Bookloans-Project.php">Library Bookloans Project<br />
+      </a>Nov. 2015 - <a href="_option_D_OOP_Assessment_Statements/Past-Paper-Code/Health-Clinic-Project.php">Health Clinic Project<br />
+      </a>May 2016 - <a href="_option_D_OOP_Assessment_Statements/Past-Paper-Code/Hotels-Project.php">Hotels Project<br />
+      </a>Nov. 2016 - <a href="_option_D_OOP_Assessment_Statements/Past-Paper-Code/Train-Routes-Project.php">Train Routes Project<br />
+    </a><a href="_option_D_OOP_Assessment_Statements/Past-Paper-Multi-class-Read-and-Trace-Code.zip">IntelliJ Project</a> with all of the above code </p>
+  </blockquote>
+<p>&nbsp;</p>
+<p>And add introductory point that:</p>
+<p>Encapsulation, inheritance, polymorphism match up with:<br />
+  Security, efficiency, and flexibility
+</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.1.1.php"><br />
+    D.1.1</a> Outline the general nature of an object. </p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.1.2.php">D.1.2</a> Distinguish between an object (definition, template or class) and instantiation. ......:</p>
+<p class="comment">And so here is a good time for the second spiral of an OOP template class.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Additional </em><strong>Needed</strong><em> Coding Notes &quot;<a href="_option_D_OOP_Assessment_Statements/D.1.2-A.php">D.1.2-A</a>&quot;: </em>OOP - Template Class Structure</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Additional </em>Optional<em> Coding Notes &quot;<a href="_option_D_OOP_Assessment_Statements/D.1.2-B.php">D.1.2-B</a>&quot;: </em>OOP - Much More Info, in fact maybe more than you need...</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.1.3.php"><br />
+D.1.3</a> Construct unified modelling language (UML) diagrams to represent object designs.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.1.4.php">D.1.4</a> Interpret UML diagrams.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.1.5.php">D.1.5</a> Describe the process of decomposition into several related objects. ......:</p>
+<p class="comment">A multi-class project, such as Pond, or other examples from D.1.5 notes.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.1.6.php"><br />
+D.1.6</a> Describe the relationships between objects for a given problem.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.1.7.php">D.1.7</a> Outline the need to reduce dependencies between objects in a given problem.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.1.8.php">D.1.8</a> Construct related objects for a given problem. ......:</p>
+<p class="comment">Another multi-class project, this time with sorting and searching added in too.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.1.9.php"><br />
+D.1.9</a> Explain the need for different data types to represent data items.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.1.10.php">D.1.10</a> Describe how data items can be passed to and from actions as parameters.</p>
+<h2><strong><br />
+  <br />
+  D.2 Features of OOP (4 hours)</strong></h2>
+<em> Students should be able to describe the features of OOP that distinguish it from other approaches to computer programming.
+</em>
+<p><a href="_option_D_OOP_Assessment_Statements/D.2.1.php"><br />
+    D.2.1</a> Define the term encapsulation.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.2.2.php">D.2.2</a> Define the term inheritance.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.2.3.php">D.2.3</a> Define the term polymorphism.</p>
+<p class="comment">Looking back on all projects in D.1<br />
+  And a new project with inheritance and overloaded constructors.<br />
+  <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Netbeans/IntelliJ Projects To Look at</em>: Bank project for Theory and Terms<strong><br />
+  </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SuperHero Game project especially for Inheritance</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.2.4.php">D.2.4</a> Explain the advantages of encapsulation.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.2.5.php">D.2.5</a> Explain the advantages of inheritance.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.2.6.php">D.2.6</a> Explain the advantages of polymorphism.<br />
+</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.2.7.php">D.2.7</a> Describe the advantages of libraries of objects.</p>
+<p class="comment">GUI Introduced - and note, not until here!!!!!! ...or thereabouts</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.2.8.php">D.2.8</a> Describe the disadvantages of OOP.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.2.9.php">D.2.9</a> Discuss the use of programming teams.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.2.10.php">D.2.10</a> Explain the advantages of modularity in program development.</p>
+<p class="comment">Advanced GUI poject (but no tables yet.)</p>
+<h2><br />
+  <br />
+D.3 Program development (20 hours)</h2>
+<p><a href="_option_D_OOP_Assessment_Statements/D.3.1.php"><br />
+D.3.1</a> Define the terms: class, identifier, primitive, instance variable, parameter variable, local variable.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.3.2.php">D.3.2</a> Define the terms: method, accessor, mutator, constructor, signature, return value.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.3.3.php">D.3.3</a> Define the terms: private, protected, public, extends, static.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.3.4.php">D.3.4</a> Describe the uses of the primitive data types and the reference class string.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.3.5.php">D.3.5</a> Construct code to implement assessment statements D.3.1–D.3.4.</p>
+<p class="comment">A to-be GUI project, starting with new template class which will include all of the above.</p>
+<p><br />
+  <span class="comment">**** <em>For the following, D.3.6 to D.3.10 assume construction of these pieces within OOP</em>.****</span><br />
+  <a href="_option_D_OOP_Assessment_Statements/D.3.6.php"><br />
+    D.3.6</a> 
+  
+  Construct code examples related to selection statements.
+  </p>
+<p class="comment">Taking this GUI project and adding some functionality to it - inputting data, conditional on radio buttons, for example.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.3.7.php"><br />
+D.3.7</a> Construct code examples related to repetition statements.</p>
+<p class="comment">GUI table introduced in this project, and for loops used.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.3.8.php"><br />
+D.3.8</a> Construct code examples related to static arrays.</p>
+<p class="comment">Arrays of objects... if this is not too big a step.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.3.9.php"><br />
+D.3.9</a> Discuss the features of modern programming languages that enable internationalization.</p>
+<p><a href="_option_D_OOP_Assessment_Statements/D.3.10.php">D.3.10</a> Discuss the ethical and moral obligations of programmers.</p>
+<p class="comment">Now the stage-by-stage GUI Search and Sort of Array of Objects project (made in 2014.) <a href="_option_D_OOP_Assessment_Statements/Insta-GUI-OOP-Tables-Sort-and-Search.zip">Insta-GUI-OOP-Sort-and-Search project</a>.</p>
+<p>&nbsp;</p>
+<p><a href="_option_D_OOP_Extension_From_Syllabus.php"><strong>***OOP Extension***</strong></a></p>
+<p><strong><a href="_recursion_Topic5andOOPFromSyllabus.php">***OOP (&amp; Topic 5) Recursion***</a></strong></p>
+<p>&nbsp;</p>
+<p><span class="Red">END &nbsp;of &nbsp;STAGE &nbsp;E</span></p>
+<p><a href="_option_D_OOP_Extension_From_Syllabus.php">go to Stage F</a> (In Topic 5, HL Programming Extension)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div>
+</body>
+</html>
+
+<?php
+ini_set('session.gc_maxlifetime', '7200');
+ini_set('session.gc_maxlifetime', '7200');
+session_start();
+require_once('../../phpHelperScripts/jsrCourses_fns.php'); //********But these will have to be made relative*************
+require_once('../../phpHelperScripts/allThreeScriptsHelper.php'); 
+db_connect();
+$user = $_SESSION['validUser7'];
+$linkHere = mysql_connect(returnhost(), returnUser(), returnPassword());
+
+//Lost of msql examples:
+
+		//To GET information from an SQL table:
+
+/* $result2 = mysql_query("select * from tableName where field = '".$loggedInUser."'", $linkHere);
+while($row = mysql_fetch_array($result2)){
+  $section = $row['section'] ; 
+} */
+
+
+		//To UPDATE something:  Example 1
+
+/* $query1 ="update tableName set fieldName = '$fullAssignName' where assignNumber = '$assignNumber'";
+mysql_query($query1); */
+
+		//To UPDATE something:  Example 2
+
+/* $query1 ="update tableName set $fileNameVariable = 'hellow world' where assignNumber = '$assignNumber'";
+mysql_query($query1); */
+
+
+		//To INSERT something:
+
+/* $query3 = "INSERT INTO itfClassicHomework VALUES('$loggedInUser','$homework', '$hwAndStudent', '', '', '', '', '', '', '', '')";
+mysql_query($query3); */
+
+
+
+		//Looping Through all of some query
+/* if($section == 'Block_IB_a'){
+	$studentsRestult = mysql_query("select * from ibYear1StudentsTable7 where section = 'Block_IB_a' and assignType = '".$letterForKindOfGrade."' order by userName", $linkHere);	
+	//but note that order by userName will only work if there is a field called userName
+}
+while($row = mysql_fetch_array($studentsRestult)){
+	$studentX = $row['userName'];
+	//and then do stuff
+}
+ */
+
+
+?>
+<style type="text/css">
+<!--
+pre {
+	color: #000000;
+	background-color: #ffffff;
+	font-family: Monospaced;
+	font-size: 14px;
+}
+table {color: #000000; background-color: #e9e8e2; font-family: Monospaced}
+.line-number {background-color: #e9e8e2}
+.character {color: #ce7b00}
+.keyword-directive {color: #0000e6}
+.comment {color: #969696}
+-->
+</style>
